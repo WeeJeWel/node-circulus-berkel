@@ -3,8 +3,6 @@ import fetchCookie from 'fetch-cookie';
 
 export default class CirculusBerkel {
 
-  isLoggedIn = false;
-
   zipCode = null; // e.g. "7411KT"
   number = null; // e.g. "1"
   street = null; // e.g. "Dorpsstraat"
@@ -30,8 +28,6 @@ export default class CirculusBerkel {
   }
 
   async login() {
-    if (this.isLoggedIn === true) return;
-
     await this.fetch('https://mijn.circulus.nl/register/zipcode.json', {
       method: 'POST',
       headers: {
@@ -72,8 +68,6 @@ export default class CirculusBerkel {
           this.municipality = res.customData.municipality;
           this.residence = res.customData.residence;
         }
-
-        this.isLoggedIn = true;
       });
   }
 
