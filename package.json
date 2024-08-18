@@ -1,0 +1,15 @@
+{
+  "name": "circulus-berkel",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emile Nijssen",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fetch-cookie": "^3.0.1",
+    "node-fetch": "^3.3.2"
+  }
+}

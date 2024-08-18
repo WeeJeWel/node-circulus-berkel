@@ -1,0 +1,20 @@
+# Circulus Berkel API Client
+
+This Node.js module is a wrapper around the https://www.circulus.nl website, and can retrieve a JSON and iCal feed when providing a Zipcode + Number.
+
+## Usage
+
+```javascript
+import CirculusBerkel from 'circulus-berkel';
+
+const circulusBerkel = new CirculusBerkel({
+  zipCode: '7411KT',
+  number: '1',
+});
+
+const iCalFeed = await circulusBerkel.getIcalFeed();
+console.log(iCalFeed);
+
+const jsonFeed = await circulusBerkel.getJsonFeed();
+console.log(jsonFeed);
+```
