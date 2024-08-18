@@ -2,6 +2,9 @@
   "name": "circulus-berkel",
   "version": "1.0.0",
   "main": "index.mjs",
+  "bin": {
+    "circulus-berkel": "./webserver.mjs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "express": "^4.19.2",
     "fetch-cookie": "^3.0.1",
     "node-fetch": "^3.3.2"
   }

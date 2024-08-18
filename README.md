@@ -12,6 +12,20 @@ $ npm i circulus-berkel
 
 ## Usage
 
+### As Webserver
+
+```bash
+$ circulus-berkel
+Server listening on http://0.0.0.0:3000
+```
+
+```http
+GET http://localhost:3000/?zipCode=7411KT&number=1&format=ical
+GET http://localhost:3000/?zipCode=7411KT&number=1&format=json
+```
+
+### As Dependency
+
 ```javascript
 import CirculusBerkel from 'circulus-berkel';
 
