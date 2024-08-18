@@ -1,0 +1,12 @@
+services:
+  circulus-berkel:
+    image: circulus-berkel
+    hostname: circulus-berkel
+    container_name: circulus-berkel
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PORT=4000
+    ports:
+      - "4000:4000"
