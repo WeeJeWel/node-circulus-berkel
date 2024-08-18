@@ -3,6 +3,7 @@ services:
     image: circulus-berkel
     hostname: circulus-berkel
     container_name: circulus-berkel
+    restart: unless-stopped
     build:
       context: .
       dockerfile: Dockerfile
