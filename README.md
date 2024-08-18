@@ -2,6 +2,12 @@
 
 This Node.js module is a wrapper around the https://www.circulus.nl website, and can retrieve a JSON and iCal feed when providing a Zipcode + Number.
 
+## Installation
+
+```bash
+$ npm i circulus-berkel
+```
+
 ## Usage
 
 ```javascript
