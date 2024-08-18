@@ -1,5 +1,7 @@
 # Circulus Berkel API Client
 
+![NPM Version](https://img.shields.io/npm/v/circulus-berkel)
+
 This Node.js module is a wrapper around the https://www.circulus.nl website, and can retrieve a JSON and iCal feed when providing a Zipcode + Number.
 
 ## Installation
